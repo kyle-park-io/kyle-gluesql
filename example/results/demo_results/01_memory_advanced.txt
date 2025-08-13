@@ -1,0 +1,56 @@
+[memory-storage] initialized
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+Table created
+
+4 rows inserted
+
+| info                                 |
+|--------------------------------------|
+| === 부서별 직원 및 프로젝트 현황 === |
+
+[error] fetch: table not found: employees
+
+| info                               |
+|------------------------------------|
+| === 평균 급여 이상 받는 직원들 === |
+
+[error] fetch: table not found: employees
+
+| info                      |
+|---------------------------|
+| === 부서 내 급여 순위 === |
+
+[error] fetch: table not found: employees
+
+[error] execute: table not found: employees
+
+| info                        |
+|-----------------------------|
+| === IT부서 급여 인상 후 === |
+
+[error] fetch: table not found: employees
+
+| info                |
+|---------------------|
+| === 저장소 정보 === |
+
+| tables   |
+|----------|
+| projects |
+
+bye
+

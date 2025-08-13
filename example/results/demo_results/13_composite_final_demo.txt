@@ -1,0 +1,37 @@
+=== GlueSQL Composite Storage 개념 실증 ===
+
+Composite Storage는 여러 저장소를 하나의 SQL 인터페이스로 통합하는 강력한 기능입니다.
+
+1. 지원 저장소 조합 예시:
+   - Memory + JSON + CSV
+   - Memory + localStorage + sessionStorage + IndexedDB (웹 환경)
+   - Sled + MongoDB + Redis
+   - JSON + Parquet + S3 (향후 지원 예정)
+
+2. 실제 사용 예시:
+   ```sql
+   -- 서로 다른 저장소의 테이블들
+   CREATE TABLE users ENGINE = json;        -- JSON 파일
+   CREATE TABLE sessions ENGINE = memory;   -- 메모리
+   CREATE TABLE cache ENGINE = redis;       -- Redis
+
+   -- 하나의 SQL로 모든 저장소 조인!
+   SELECT u.name, s.login_time, c.cached_data
+   FROM users u
+   JOIN sessions s ON u.id = s.user_id
+   JOIN cache c ON u.id = c.user_id;
+   ```
+
+3. 장점:
+   ✅ 데이터 마이그레이션 없이 여러 저장소 통합
+   ✅ 각 저장소의 장점을 활용
+   ✅ 단일 SQL 인터페이스
+   ✅ 저장소별 최적화된 성능
+
+4. 사용 시나리오:
+   - 마이크로서비스 데이터 통합
+   - 레거시 시스템과 신규 시스템 연동
+   - 데이터 레이크 구축
+   - 하이브리드 클라우드 환경
+
+=== Composite Storage는 GlueSQL의 핵심 혁신 기능입니다! ===

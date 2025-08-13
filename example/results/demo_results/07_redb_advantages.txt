@@ -1,0 +1,63 @@
+[redb-storage] connected to data/redb_demo/database.redb
+[error] No such file or directory (os error 2)
+
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+[error] alter: table already exists: app_logs
+
+10 rows inserted
+
+| info                            |
+|---------------------------------|
+| === 종합 사용자 활동 리포트 === |
+
+| username | email               | is_active | session_count | activity_count | preferences_set | first_session       | last_activity       |
+|----------|---------------------|-----------|---------------|----------------|-----------------|---------------------|---------------------|
+| alice    | alice@example.com   | TRUE      | 324           | 324            | 0               | 2024-01-10 09:00:00 | 2024-01-10 14:30:00 |
+| bob      | bob@example.com     | TRUE      | 162           | 162            | 0               | 2024-01-10 09:15:00 | 2024-01-11 11:20:00 |
+| diana    | diana@example.com   | TRUE      | 54            | 54             | 0               | 2024-01-10 10:45:00 | 2024-01-10 10:45:00 |
+| eve      | eve@example.com     | TRUE      | 27            | 27             | 0               | 2024-01-11 11:10:00 | 2024-01-11 08:15:00 |
+| charlie  | charlie@example.com | FALSE     | 0             | 9              | 0               | NULL                | 2024-01-10 10:00:00 |
+| frank    | frank@example.com   | TRUE      | 81            | 0              | 81              | 2024-01-12 10:05:00 | NULL                |
+
+| info                     |
+|--------------------------|
+| === 보안 이벤트 분석 === |
+
+[error] storage: [Storage] CustomFunction is not supported
+
+| info                       |
+|----------------------------|
+| === 시간대별 활동 패턴 === |
+
+[error] storage: [Storage] CustomFunction is not supported
+
+| info                           |
+|--------------------------------|
+| === 데이터베이스 전체 통계 === |
+
+| database_type             | total_users | total_sessions | total_preferences | total_logs | storage_info                  |
+|---------------------------|-------------|----------------|-------------------|------------|-------------------------------|
+| Redb Single File Database | 18          | 27             | 9                 | 30         | All data in single .redb file |
+
+| info                       |
+|----------------------------|
+| === 데이터 무결성 확인 === |
+
+[error] translate: unsupported query set expr: SELECT 'Orphaned Sessions' AS check_type, COUNT(*) AS count FROM user_sessions AS s WHERE NOT EXISTS (SELECT 1 FROM users AS u WHERE u.id = s.user_id) UNION ALL SELECT 'Orphaned Logs' AS check_type, COUNT(*) AS count FROM app_logs AS l WHERE NOT EXISTS (SELECT 1 FROM users AS u WHERE u.id = l.user_id) UNION ALL SELECT 'Orphaned Preferences' AS check_type, COUNT(*) AS count FROM user_preferences AS p WHERE NOT EXISTS (SELECT 1 FROM users AS u WHERE u.id = p.user_id)
+
+bye
+

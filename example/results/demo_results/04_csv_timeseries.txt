@@ -1,0 +1,44 @@
+[csv-storage] connected to data/csv_demo
+[error] No such file or directory (os error 2)
+
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+| info                   |
+|------------------------|
+| === 일별 매출 추이 === |
+
+[error] value: non-numeric values Str("1200000") * Str("1")
+
+| info                          |
+|-------------------------------|
+| === 고객 유형별 매출 분석 === |
+
+[error] value: non-numeric values Str("1200000") * Str("1")
+
+| info                     |
+|--------------------------|
+| === 제품별 판매 현황 === |
+
+[error] value: non-numeric values Str("1200000") * Str("1")
+
+| info                     |
+|--------------------------|
+| === 일별 성장률 분석 === |
+
+[error] translate: function args.length not matching: ROUND, expected: 1, found: 2
+
+bye
+

@@ -1,0 +1,4 @@
+{"user_id": 1, "category_id": 1, "data": {"action": "view", "product": "laptop", "time_spent": 120}}
+{"user_id": 2, "category_id": 2, "data": {"action": "purchase", "items": ["mouse", "pad"], "total": 45}}
+{"user_id": 3, "category_id": 1, "data": {"action": "compare", "products": ["laptop1", "laptop2"], "duration": 300}}
+{"user_id": 4, "category_id": 3, "data": {"action": "download", "software": "antivirus", "size_mb": 150}}

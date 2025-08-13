@@ -1,0 +1,46 @@
+[memory-storage] initialized
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+Table created
+
+3 rows inserted
+
+| info                      |
+|---------------------------|
+| === Redis 캐시 데이터 === |
+
+| key_name       | value_data                                 | expiry_time | hit_count |
+|----------------|--------------------------------------------|-------------|-----------|
+| user:1:profile | {"name": "Alice", "age": 30}               | 2024-01-02  | 145       |
+| session:abc123 | {"user_id": 1, "login_time": "2024-01-01"} | 2024-01-01  | 5         |
+| config:app     | {"theme": "dark", "language": "en"}        | 2024-12-31  | 890       |
+
+| info                      |
+|---------------------------|
+| === 인기 캐시 키 분석 === |
+
+| key_name       | hit_count | value_data                                 |
+|----------------|-----------|--------------------------------------------|
+| config:app     | 890       | {"theme": "dark", "language": "en"}        |
+| user:1:profile | 145       | {"name": "Alice", "age": 30}               |
+| session:abc123 | 5         | {"user_id": 1, "login_time": "2024-01-01"} |
+
+| feature                                        |
+|------------------------------------------------|
+| Redis 키-값 저장소를 SQL로 분석할 수 있습니다! |
+
+bye
+

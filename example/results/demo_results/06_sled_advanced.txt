@@ -1,0 +1,64 @@
+[sled-storage] connected to data/sled_demo
+[error] No such file or directory (os error 2)
+
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+[error] alter: table already exists: projects
+
+[error] alter: table already exists: project_assignments
+
+[error] index: index name already exists: idx_project_department
+
+[error] index: index name already exists: idx_assignment_project
+
+[error] index: index name already exists: idx_assignment_employee
+
+[error] validate: duplicate entry 'I64(1)' for primary_key field
+
+[error] validate: duplicate entry 'I64(1)' for primary_key field
+
+| info                            |
+|---------------------------------|
+| === 프로젝트별 팀 구성 현황 === |
+
+[error] storage: [Storage] CustomFunction is not supported
+
+| info                              |
+|-----------------------------------|
+| === 직원별 프로젝트 참여 현황 === |
+
+[error] storage: [Storage] CustomFunction is not supported
+
+| info                             |
+|----------------------------------|
+| === 부서별 급여 순위 및 분석 === |
+
+[error] translate: function args.length not matching: ROUND, expected: 1, found: 2
+
+| info                       |
+|----------------------------|
+| === 데이터 무결성 검사 === |
+
+| check_type | violations |
+
+| check_type | violations |
+
+| result                                     |
+|--------------------------------------------|
+| === Sled Storage 고급 기능 테스트 완료 === |
+
+bye
+

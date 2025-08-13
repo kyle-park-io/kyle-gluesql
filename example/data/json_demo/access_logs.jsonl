@@ -1,0 +1,8 @@
+{"timestamp": "2024-01-01T08:00:00", "ip": "192.168.1.100", "method": "GET", "path": "/", "status": 200, "size": 1024}
+{"timestamp": "2024-01-01T08:01:00", "ip": "192.168.1.101", "method": "GET", "path": "/login", "status": 200, "size": 512}
+{"timestamp": "2024-01-01T08:02:00", "ip": "192.168.1.100", "method": "POST", "path": "/login", "status": 302, "size": 256}
+{"timestamp": "2024-01-01T08:03:00", "ip": "192.168.1.102", "method": "GET", "path": "/dashboard", "status": 200, "size": 2048}
+{"timestamp": "2024-01-01T08:04:00", "ip": "192.168.1.103", "method": "GET", "path": "/api/data", "status": 404, "size": 128}
+{"timestamp": "2024-01-01T08:05:00", "ip": "192.168.1.100", "method": "GET", "path": "/profile", "status": 200, "size": 1536}
+{"timestamp": "2024-01-01T08:06:00", "ip": "192.168.1.104", "method": "POST", "path": "/api/submit", "status": 500, "size": 64}
+{"timestamp": "2024-01-01T08:07:00", "ip": "192.168.1.101", "method": "GET", "path": "/logout", "status": 200, "size": 256}

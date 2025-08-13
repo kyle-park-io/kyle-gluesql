@@ -1,0 +1,7 @@
+{"timestamp": "2024-01-01T10:00:00", "user_id": 1, "event": "login", "ip": "192.168.1.100"}
+{"timestamp": "2024-01-01T10:05:00", "user_id": 1, "event": "page_view", "page": "/dashboard", "duration": 30}
+{"timestamp": "2024-01-01T10:10:00", "user_id": 2, "event": "login", "ip": "192.168.1.101"}
+{"timestamp": "2024-01-01T10:15:00", "user_id": 1, "event": "click", "element": "button", "page": "/profile"}
+{"timestamp": "2024-01-01T10:20:00", "user_id": 3, "event": "login", "ip": "192.168.1.102"}
+{"timestamp": "2024-01-01T10:25:00", "user_id": 2, "event": "purchase", "product": "laptop", "amount": 1200}
+{"timestamp": "2024-01-01T10:30:00", "user_id": 1, "event": "logout"}

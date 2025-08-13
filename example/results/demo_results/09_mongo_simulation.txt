@@ -1,0 +1,45 @@
+[memory-storage] initialized
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+Table created
+
+3 rows inserted
+
+| info                               |
+|------------------------------------|
+| === MongoDB 스타일 문서 데이터 === |
+
+| _id      | name       | category    | price  | in_stock | tags                      |
+|----------|------------|-------------|--------|----------|---------------------------|
+| prod_001 | Laptop     | Electronics | 999.99 | TRUE     | ["computers", "portable"] |
+| prod_002 | Coffee Mug | Home        | 12.99  | TRUE     | ["kitchen", "ceramic"]    |
+| prod_003 | Smartphone | Electronics | 699.99 | FALSE    | ["mobile", "tech"]        |
+
+| info                                  |
+|---------------------------------------|
+| === 카테고리별 집계 (NoSQL → SQL) === |
+
+| category    | product_count | avg_price |
+|-------------|---------------|-----------|
+| Electronics | 2             | 849.99    |
+| Home        | 1             | 12.99     |
+
+| feature                                    |
+|--------------------------------------------|
+| MongoDB 컬렉션을 SQL로 쿼리할 수 있습니다! |
+
+bye
+

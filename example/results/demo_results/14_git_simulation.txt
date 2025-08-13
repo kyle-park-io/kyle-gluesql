@@ -1,0 +1,57 @@
+[memory-storage] initialized
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+Table created
+
+4 rows inserted
+
+| info                              |
+|-----------------------------------|
+| === Git 연동 코드 리뷰 데이터 === |
+
+| review_id | pull_request | reviewer | status            | comments         | created_at |
+|-----------|--------------|----------|-------------------|------------------|------------|
+| 1         | 123          | alice    | approved          | LGTM! Great work | 2024-01-01 |
+| 2         | 123          | bob      | changes_requested | Please add tests | 2024-01-01 |
+| 3         | 124          | charlie  | approved          | Code looks good  | 2024-01-02 |
+| 4         | 125          | alice    | pending           | Still reviewing  | 2024-01-03 |
+
+| info                     |
+|--------------------------|
+| === 리뷰 상태별 통계 === |
+
+| status            | count |
+|-------------------|-------|
+| approved          | 2     |
+| changes_requested | 1     |
+| pending           | 1     |
+
+| info                  |
+|-----------------------|
+| === 리뷰어별 활동 === |
+
+| reviewer | reviews_done |
+|----------|--------------|
+| alice    | 2            |
+| bob      | 1            |
+| charlie  | 1            |
+
+| feature                                            |
+|----------------------------------------------------|
+| Git Storage는 데이터 변경을 자동으로 commit합니다! |
+
+bye
+

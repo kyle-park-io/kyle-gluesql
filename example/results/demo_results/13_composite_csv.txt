@@ -1,0 +1,41 @@
+[csv-storage] connected to data/composite_demo
+[error] No such file or directory (os error 2)
+
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+| info                   |
+|------------------------|
+| === CSV: 급여 정보 === |
+
+| employee_id | base_salary | bonus | year |
+|-------------|-------------|-------|------|
+| 1           | 5200        | 400   | 2023 |
+| 1           | 5500        | 500   | 2024 |
+| 2           | 4500        | 250   | 2023 |
+| 2           | 4800        | 300   | 2024 |
+| 3           | 5500        | 550   | 2023 |
+| 3           | 5800        | 600   | 2024 |
+| 4           | 4600        | 350   | 2023 |
+| 4           | 4900        | 400   | 2024 |
+
+| info                          |
+|-------------------------------|
+| === CSV: 2024년 급여 통계 === |
+
+| employee_id | total_salary |
+
+bye
+

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "user_id": 2,
+    "product": "laptop",
+    "price": 1200,
+    "quantity": 1,
+    "date": "2024-01-01"
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "product": "mouse",
+    "price": 25,
+    "quantity": 2,
+    "date": "2024-01-01"
+  },
+  {
+    "id": 3,
+    "user_id": 3,
+    "product": "keyboard",
+    "price": 80,
+    "quantity": 1,
+    "date": "2024-01-02"
+  },
+  {
+    "id": 4,
+    "user_id": 4,
+    "product": "monitor",
+    "price": 300,
+    "quantity": 1,
+    "date": "2024-01-02"
+  },
+  {
+    "id": 5,
+    "user_id": 5,
+    "product": "headset",
+    "price": 150,
+    "quantity": 2,
+    "date": "2024-01-03"
+  }
+]

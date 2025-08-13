@@ -1,0 +1,70 @@
+[redb-storage] connected to data/redb_demo/database.redb
+[error] No such file or directory (os error 2)
+
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+[error] alter: table already exists: users
+
+[error] alter: table already exists: user_sessions
+
+5 rows inserted
+
+8 rows inserted
+
+| info                |
+|---------------------|
+| === 사용자 목록 === |
+
+| id | username | email               | created_at          | is_active |
+|----|----------|---------------------|---------------------|-----------|
+| 1  | alice    | alice@example.com   | 2024-01-01 10:00:00 | TRUE      |
+| 1  | alice    | alice@example.com   | 2024-01-01 10:00:00 | TRUE      |
+| 1  | alice    | alice@example.com   | 2024-01-01 10:00:00 | TRUE      |
+| 2  | bob      | bob@example.com     | 2024-01-02 11:30:00 | TRUE      |
+| 2  | bob      | bob@example.com     | 2024-01-02 11:30:00 | TRUE      |
+| 2  | bob      | bob@example.com     | 2024-01-02 11:30:00 | TRUE      |
+| 3  | charlie  | charlie@example.com | 2024-01-03 09:15:00 | FALSE     |
+| 3  | charlie  | charlie@example.com | 2024-01-03 09:15:00 | FALSE     |
+| 3  | charlie  | charlie@example.com | 2024-01-03 09:15:00 | FALSE     |
+| 4  | diana    | diana@example.com   | 2024-01-04 14:20:00 | TRUE      |
+| 4  | diana    | diana@example.com   | 2024-01-04 14:20:00 | TRUE      |
+| 4  | diana    | diana@example.com   | 2024-01-04 14:20:00 | TRUE      |
+| 5  | eve      | eve@example.com     | 2024-01-05 16:45:00 | TRUE      |
+| 5  | eve      | eve@example.com     | 2024-01-05 16:45:00 | TRUE      |
+| 5  | eve      | eve@example.com     | 2024-01-05 16:45:00 | TRUE      |
+| 6  | frank    | frank@example.com   | 2024-01-12 10:00:00 | TRUE      |
+| 6  | frank    | frank@example.com   | 2024-01-12 10:00:00 | TRUE      |
+
+| info                          |
+|-------------------------------|
+| === 활성 사용자 세션 분석 === |
+
+| username | email             | session_count | first_login         | last_login          |
+|----------|-------------------|---------------|---------------------|---------------------|
+| alice    | alice@example.com | 27            | 2024-01-10 09:00:00 | 2024-01-11 15:30:00 |
+| bob      | bob@example.com   | 18            | 2024-01-10 09:15:00 | 2024-01-11 08:20:00 |
+| diana    | diana@example.com | 18            | 2024-01-10 10:45:00 | 2024-01-11 13:45:00 |
+| eve      | eve@example.com   | 9             | 2024-01-11 11:10:00 | 2024-01-11 11:10:00 |
+| frank    | frank@example.com | 4             | 2024-01-12 10:05:00 | 2024-01-12 10:05:00 |
+
+| info                           |
+|--------------------------------|
+| === 데이터베이스 메타 정보 === |
+
+[error] translate: unsupported query set expr: SELECT 'users' AS table_name UNION ALL SELECT 'user_sessions' AS table_name
+
+bye
+

@@ -1,0 +1,6 @@
+id,name,email,phone,city,registration_date
+1,ABC기업,abc@company.com,02-1234-5678,서울,2020-01-01
+2,홍길동,hong@email.com,010-1111-2222,부산,2021-05-15
+3,XYZ코퍼레이션,xyz@corp.com,02-9999-8888,서울,2019-12-20
+4,김개인,kim@personal.com,010-3333-4444,대구,2022-03-10
+5,DEF엔터프라이즈,def@enterprise.com,051-7777-6666,부산,2021-08-25

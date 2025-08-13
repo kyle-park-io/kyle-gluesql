@@ -1,0 +1,71 @@
+[memory-storage] initialized
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+Table created
+
+10 rows inserted
+
+| info                               |
+|------------------------------------|
+| === Parquet 스타일 컬럼형 분석 === |
+
+| category    | transaction_count | total_revenue | avg_transaction_value | total_quantity |
+|-------------|-------------------|---------------|-----------------------|----------------|
+| Electronics | 5                 | 4999.94       | 999.9879999999999     | 6              |
+| Home        | 2                 | 1299.98       | 649.99                | 2              |
+| Clothing    | 3                 | 339.9         | 113.3                 | 10             |
+
+| info                        |
+|-----------------------------|
+| === 일별 매출 추이 분석 === |
+
+| transaction_date | daily_transactions | daily_revenue | unique_customers | unique_products | avg_transaction_value |
+|------------------|--------------------|---------------|------------------|-----------------|-----------------------|
+| 2024-01-01       | 3                  | 2589.94       | 3                | 3               | 863.3133333333334     |
+| 2024-01-02       | 3                  | 1599.96       | 3                | 3               | 533.32                |
+| 2024-01-03       | 3                  | 1849.93       | 3                | 3               | 616.6433333333333     |
+| 2024-01-04       | 1                  | 599.99        | 1                | 1               | 599.99                |
+
+| info                     |
+|--------------------------|
+| === 지역별 매출 성과 === |
+
+| region | category    | transaction_count | region_category_revenue | avg_unit_price     | total_items_sold |
+|--------|-------------|-------------------|-------------------------|--------------------|------------------|
+| East   | Electronics | 1                 | 1299.99                 | 1299.99            | 1                |
+| East   | Clothing    | 1                 | 89.97                   | 29.990000000000002 | 3                |
+| North  | Electronics | 1                 | 1199.98                 | 599.99             | 2                |
+| North  | Home        | 1                 | 899.99                  | 899.99             | 1                |
+| North  | Clothing    | 1                 | 149.95000000000002      | 29.990000000000002 | 5                |
+| South  | Electronics | 2                 | 1899.98                 | 949.99             | 2                |
+| South  | Clothing    | 1                 | 99.98                   | 49.99              | 2                |
+| West   | Electronics | 1                 | 599.99                  | 599.99             | 1                |
+| West   | Home        | 1                 | 399.99                  | 399.99             | 1                |
+
+| info                      |
+|---------------------------|
+| === 고가치 고객 TOP 5 === |
+
+| customer_id | purchase_count | total_spent | avg_purchase_value | categories_purchased | first_purchase | last_purchase |
+|-------------|----------------|-------------|--------------------|----------------------|----------------|---------------|
+| 1002        | 2              | 1449.94     | 724.97             | 2                    | 2024-01-01     | 2024-01-03    |
+| 1006        | 1              | 1299.99     | 1299.99            | 1                    | 2024-01-03     | 2024-01-03    |
+| 1001        | 2              | 1299.96     | 649.98             | 2                    | 2024-01-01     | 2024-01-02    |
+| 1005        | 1              | 899.99      | 899.99             | 1                    | 2024-01-02     | 2024-01-02    |
+| 1004        | 1              | 599.99      | 599.99             | 1                    | 2024-01-02     | 2024-01-02    |
+
+bye
+

@@ -1,0 +1,31 @@
+[json-storage] connected to data/composite_demo
+[error] No such file or directory (os error 2)
+
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+| info                      |
+|---------------------------|
+| === JSON: 사용자 정보 === |
+
+| department | email            | id | name   |
+|------------|------------------|----|--------|
+| IT         | kim@company.com  | 1  | 김철수 |
+| HR         | lee@company.com  | 2  | 이영희 |
+| Finance    | park@company.com | 3  | 박민수 |
+| Marketing  | choi@company.com | 4  | 최지연 |
+
+bye
+

@@ -1,0 +1,36 @@
+[memory-storage] initialized
+[error] No such file or directory (os error 2)
+
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+Table created
+
+5 rows inserted
+
+| info                        |
+|-----------------------------|
+| === Memory: 세션 데이터 === |
+
+| user_id | login_time          | ip_address    | device  |
+|---------|---------------------|---------------|---------|
+| 1       | 2024-01-01 09:00:00 | 192.168.1.100 | laptop  |
+| 2       | 2024-01-01 09:15:00 | 192.168.1.101 | mobile  |
+| 3       | 2024-01-01 09:30:00 | 192.168.1.102 | desktop |
+| 4       | 2024-01-01 09:45:00 | 192.168.1.103 | tablet  |
+| 1       | 2024-01-01 14:00:00 | 192.168.1.100 | laptop  |
+
+bye
+

@@ -1,0 +1,57 @@
+[memory-storage] initialized
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+Table created
+
+5 rows inserted
+
+| info                     |
+|--------------------------|
+| === 공유 세션 데이터 === |
+
+| session_id | user_id | thread_id | created_at          | data                |
+|------------|---------|-----------|---------------------|---------------------|
+| sess_001   | 1       | 1         | 2024-01-01 10:00:00 | thread_1_data       |
+| sess_002   | 2       | 2         | 2024-01-01 10:00:01 | thread_2_data       |
+| sess_003   | 3       | 1         | 2024-01-01 10:00:02 | thread_1_more_data  |
+| sess_004   | 4       | 3         | 2024-01-01 10:00:03 | thread_3_data       |
+| sess_005   | 1       | 2         | 2024-01-01 10:00:04 | thread_2_user1_data |
+
+| info                       |
+|----------------------------|
+| === 스레드별 활동 통계 === |
+
+| thread_id | session_count | unique_users | first_activity      | last_activity       |
+|-----------|---------------|--------------|---------------------|---------------------|
+| 1         | 2             | 2            | 2024-01-01 10:00:00 | 2024-01-01 10:00:02 |
+| 2         | 2             | 2            | 2024-01-01 10:00:01 | 2024-01-01 10:00:04 |
+| 3         | 1             | 1            | 2024-01-01 10:00:03 | 2024-01-01 10:00:03 |
+
+Table created
+
+6 rows inserted
+
+| info                       |
+|----------------------------|
+| === 동시성 카운터 현황 === |
+
+| counter_name   | current_value | update_count | thread_count |
+|----------------|---------------|--------------|--------------|
+| global_counter | 4             | 4            | 4            |
+| user_counter   | 2             | 2            | 2            |
+
+bye
+

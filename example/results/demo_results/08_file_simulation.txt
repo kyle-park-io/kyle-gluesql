@@ -1,0 +1,36 @@
+[memory-storage] initialized
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+Table created
+
+3 rows inserted
+
+| info                      |
+|---------------------------|
+| === File Storage 특징 === |
+
+| id | title       | content               | author  | created_at | file_size |
+|----|-------------|-----------------------|---------|------------|-----------|
+| 1  | README.md   | Project documentation | alice   | 2024-01-01 | 1024      |
+| 2  | config.json | Configuration file    | bob     | 2024-01-02 | 512       |
+| 3  | main.rs     | Main source code      | charlie | 2024-01-03 | 2048      |
+
+| description                                                          |
+|----------------------------------------------------------------------|
+| File Storage는 각 테이블을 디렉토리로, 각 행을 RON 파일로 저장합니다 |
+
+bye
+

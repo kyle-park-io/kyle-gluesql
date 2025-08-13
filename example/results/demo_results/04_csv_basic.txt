@@ -1,0 +1,53 @@
+[csv-storage] connected to data/csv_demo
+[error] No such file or directory (os error 2)
+
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+| info                   |
+|------------------------|
+| === 전체 직원 목록 === |
+
+| id | name   | department | salary | hire_date  | age |
+|----|--------|------------|--------|------------|-----|
+| 3  | 박민수 | IT         | 6200   | 2021-06-10 | 32  |
+| 5  | 정현우 | Finance    | 5800   | 2018-12-03 | 35  |
+| 1  | 김철수 | IT         | 5500   | 2020-01-15 | 30  |
+| 7  | 이미영 | HR         | 5200   | 2021-11-28 | 29  |
+| 8  | 박준호 | Marketing  | 5100   | 2020-04-17 | 31  |
+| 4  | 최지연 | Marketing  | 4900   | 2020-09-05 | 26  |
+| 2  | 이영희 | HR         | 4800   | 2019-03-22 | 28  |
+| 6  | 김영수 | IT         | 4500   | 2022-02-14 | 24  |
+
+| info                     |
+|--------------------------|
+| === 부서별 직원 현황 === |
+
+[error] value: non-numeric values Str("5500") + Str("6200")
+
+| info                  |
+|-----------------------|
+| === 연령대별 분석 === |
+
+[error] value: non-numeric values Str("5500") + Str("4800")
+
+| info                    |
+|-------------------------|
+| === 입사년도별 통계 === |
+
+[error] value: non-numeric values Str("5500") + Str("4900")
+
+bye
+

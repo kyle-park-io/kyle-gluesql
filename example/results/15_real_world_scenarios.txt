@@ -1,0 +1,87 @@
+=== GlueSQL 실제 사용 시나리오 모음 ===
+
+🏢 1. 마이크로서비스 아키텍처
+```sql
+-- 사용자 서비스 (PostgreSQL)
+CREATE TABLE users ENGINE = postgres;
+
+-- 세션 캐시 (Redis)
+CREATE TABLE sessions ENGINE = redis;
+
+-- 이벤트 로그 (JSON)
+CREATE TABLE events ENGINE = json;
+
+-- 실시간 분석
+SELECT u.name, s.last_activity, COUNT(e.event_type)
+FROM users u
+JOIN sessions s ON u.id = s.user_id
+JOIN events e ON u.id = e.user_id
+WHERE s.active = true;
+```
+
+🌐 2. 하이브리드 웹 애플리케이션
+```sql
+-- 오프라인 데이터 (IndexedDB)
+CREATE TABLE offline_data ENGINE = indexedDB;
+
+-- 사용자 설정 (localStorage)
+CREATE TABLE user_prefs ENGINE = localStorage;
+
+-- 임시 계산 (Memory)
+CREATE TABLE temp_calc ENGINE = memory;
+
+-- 통합 분석
+SELECT * FROM offline_data o
+JOIN user_prefs p ON o.user_id = p.user_id
+JOIN temp_calc t ON o.session_id = t.session_id;
+```
+
+📊 3. 데이터 레이크 분석
+```sql
+-- 원시 로그 (Parquet)
+CREATE TABLE raw_logs ENGINE = parquet;
+
+-- 집계 테이블 (Sled)
+CREATE TABLE aggregated_stats ENGINE = sled;
+
+-- 설정 파일 (CSV)
+CREATE TABLE configs ENGINE = csv;
+
+-- 복합 분석
+SELECT c.category, COUNT(*), AVG(a.value)
+FROM raw_logs r
+JOIN configs c ON r.category_id = c.id
+JOIN aggregated_stats a ON r.id = a.source_id
+GROUP BY c.category;
+```
+
+🔄 4. 실시간 ETL 파이프라인
+```sql
+-- 소스: MongoDB
+CREATE TABLE source_data ENGINE = mongo;
+
+-- 변환: Memory (임시)
+CREATE TABLE transformed ENGINE = memory;
+
+-- 타겟: JSON (결과)
+CREATE TABLE target_data ENGINE = json;
+
+-- ETL 프로세스
+INSERT INTO target_data
+SELECT processed_data
+FROM (
+    SELECT transform_function(data) as processed_data
+    FROM source_data
+    WHERE updated_at > last_sync
+);
+```
+
+💡 핵심 가치:
+- 하나의 SQL로 모든 데이터 소스 통합
+- 데이터 마이그레이션 없이 기존 시스템 활용
+- 저장소별 최적화된 성능 활용
+- 복잡한 데이터 파이프라인 간소화
+
+🎯 결론:
+GlueSQL은 "모든 데이터를 SQL로" 다룰 수 있게 해주는
+혁신적인 데이터베이스 엔진입니다!

@@ -1,0 +1,92 @@
+[redb-storage] connected to data/redb_demo/database.redb
+[error] No such file or directory (os error 2)
+
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+[error] alter: table already exists: user_preferences
+
+Transaction started
+
+1 row inserted
+
+3 rows inserted
+
+1 row inserted
+
+Commit completed
+
+| info                               |
+|------------------------------------|
+| === 트랜잭션 후 새 사용자 확인 === |
+
+| username | email             | created_at          | preference_count | session_count |
+|----------|-------------------|---------------------|------------------|---------------|
+| frank    | frank@example.com | 2024-01-12 10:00:00 | 81               | 81            |
+
+| info                     |
+|--------------------------|
+| === 사용자 설정 현황 === |
+
+| username | preference_key | preference_value | updated_at          |
+|----------|----------------|------------------|---------------------|
+| frank    | language       | ko               | 2024-01-12 10:00:00 |
+| frank    | language       | ko               | 2024-01-12 10:00:00 |
+| frank    | language       | ko               | 2024-01-12 10:00:00 |
+| frank    | language       | ko               | 2024-01-12 10:00:00 |
+| frank    | language       | ko               | 2024-01-12 10:00:00 |
+| frank    | language       | ko               | 2024-01-12 10:00:00 |
+| frank    | language       | ko               | 2024-01-12 10:00:00 |
+| frank    | language       | ko               | 2024-01-12 10:00:00 |
+| frank    | language       | ko               | 2024-01-12 10:00:00 |
+| frank    | notifications  | true             | 2024-01-12 10:00:00 |
+| frank    | notifications  | true             | 2024-01-12 10:00:00 |
+| frank    | notifications  | true             | 2024-01-12 10:00:00 |
+| frank    | notifications  | true             | 2024-01-12 10:00:00 |
+| frank    | notifications  | true             | 2024-01-12 10:00:00 |
+| frank    | notifications  | true             | 2024-01-12 10:00:00 |
+| frank    | notifications  | true             | 2024-01-12 10:00:00 |
+| frank    | notifications  | true             | 2024-01-12 10:00:00 |
+| frank    | notifications  | true             | 2024-01-12 10:00:00 |
+| frank    | theme          | dark             | 2024-01-12 10:00:00 |
+| frank    | theme          | dark             | 2024-01-12 10:00:00 |
+| frank    | theme          | dark             | 2024-01-12 10:00:00 |
+| frank    | theme          | dark             | 2024-01-12 10:00:00 |
+| frank    | theme          | dark             | 2024-01-12 10:00:00 |
+| frank    | theme          | dark             | 2024-01-12 10:00:00 |
+| frank    | theme          | dark             | 2024-01-12 10:00:00 |
+| frank    | theme          | dark             | 2024-01-12 10:00:00 |
+| frank    | theme          | dark             | 2024-01-12 10:00:00 |
+
+| info                     |
+|--------------------------|
+| === 일일 로그인 통계 === |
+
+[error] storage: [Storage] CustomFunction is not supported
+
+| info                       |
+|----------------------------|
+| === 브라우저 사용 현황 === |
+
+| browser | session_count | unique_users |
+|---------|---------------|--------------|
+| Chrome  | 9             | 9            |
+| Mozilla | 6             | 6            |
+| Safari  | 6             | 6            |
+| Firefox | 3             | 3            |
+| Edge    | 3             | 3            |
+
+bye
+

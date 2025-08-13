@@ -1,0 +1,57 @@
+[memory-storage] initialized
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+Table created
+
+5 rows inserted
+
+| info                        |
+|-----------------------------|
+| === 공유 캐시 최신 상태 === |
+
+| key_name   | value_data                       | latest_version | update_count |
+|------------|----------------------------------|----------------|--------------|
+| config:app | {"theme": "dark", "lang": "ko"}  | 1              | 1            |
+| config:app | {"theme": "light", "lang": "ko"} | 2              | 1            |
+| user:1     | {"name": "Alice", "age": 30}     | 1              | 1            |
+| user:1     | {"name": "Alice", "age": 31}     | 2              | 1            |
+| user:2     | {"name": "Bob", "age": 25}       | 1              | 1            |
+
+| info                          |
+|-------------------------------|
+| === 스레드별 락 사용 패턴 === |
+
+| thread_id | lock_acquisitions | unique_keys_locked | first_lock          | last_lock           |
+|-----------|-------------------|--------------------|---------------------|---------------------|
+| 1         | 2                 | 2                  | 2024-01-01 10:00:00 | 2024-01-01 10:00:03 |
+| 2         | 2                 | 2                  | 2024-01-01 10:00:01 | 2024-01-01 10:00:04 |
+| 3         | 1                 | 1                  | 2024-01-01 10:00:02 | 2024-01-01 10:00:02 |
+
+Table created
+
+5 rows inserted
+
+| info                       |
+|----------------------------|
+| === 메모리 사용량 분석 === |
+
+| operation_type | operation_count | avg_memory_mb      | avg_cpu_percent   | threads_used |
+|----------------|-----------------|--------------------|-------------------|--------------|
+| write          | 2               | 16                 | 8.9               | 2            |
+| read           | 3               | 12.300000000000002 | 5.066666666666667 | 3            |
+
+bye
+

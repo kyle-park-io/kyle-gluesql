@@ -1,0 +1,53 @@
+[json-storage] connected to data/json_demo
+[error] No such file or directory (os error 2)
+
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+| info                                |
+|-------------------------------------|
+| === 카테고리 목록 (스키마 정의) === |
+
+| id | name        | description |
+|----|-------------|-------------|
+| 1  | Electronics | 전자제품    |
+| 2  | Accessories | 액세서리    |
+| 3  | Software    | 소프트웨어  |
+
+| info                             |
+|----------------------------------|
+| === 혼합 이벤트 (스키마리스) === |
+
+| category_id | data                                                                 | user_id |
+|-------------|----------------------------------------------------------------------|---------|
+| 1           | {"action":"view","product":"laptop","time_spent":120}                | 1       |
+| 2           | {"action":"purchase","items":["mouse","pad"],"total":45}             | 2       |
+| 1           | {"action":"compare","duration":300,"products":["laptop1","laptop2"]} | 3       |
+| 3           | {"action":"download","size_mb":150,"software":"antivirus"}           | 4       |
+
+| info                                |
+|-------------------------------------|
+| === 카테고리별 사용자 활동 분석 === |
+
+[error] storage: [Storage] CustomFunction is not supported
+
+| info                          |
+|-------------------------------|
+| === JSON 데이터 상세 분석 === |
+
+[error] storage: [Storage] CustomFunction is not supported
+
+bye
+

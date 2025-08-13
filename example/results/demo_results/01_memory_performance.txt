@@ -1,0 +1,48 @@
+[memory-storage] initialized
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+Table created
+
+10 rows inserted
+
+| info                                    |
+|-----------------------------------------|
+| === 카테고리별 통계 (메모리 저장소) === |
+
+| category | 데이터수 | 평균값             | 합계               | 최솟값             | 최댓값             | 범위              |
+|----------|----------|--------------------|--------------------|--------------------|--------------------|-------------------|
+| C        | 3        | 31.46666666666667  | 94.4               | 28.700000000000003 | 35.6               | 6.899999999999999 |
+| B        | 3        | 23                 | 69                 | 20.3               | 25.900000000000002 | 5.600000000000001 |
+| A        | 4        | 14.225000000000001 | 56.900000000000006 | 10.5               | 18.400000000000002 | 7.900000000000002 |
+
+| info                   |
+|------------------------|
+| === 이동 평균 계산 === |
+
+| id | category | value | 이동평균 |
+|----|----------|-------|----------|
+| 1  | A        | 10.5  | 22.03    |
+
+| result                                 |
+|----------------------------------------|
+| === 메모리 저장소 성능 테스트 완료 === |
+
+| description                                                         |
+|---------------------------------------------------------------------|
+| 메모리 저장소는 모든 데이터가 RAM에 저장되어 최고 성능을 제공합니다 |
+
+bye
+

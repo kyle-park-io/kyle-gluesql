@@ -1,0 +1,49 @@
+[json-storage] connected to data/json_demo
+[error] No such file or directory (os error 2)
+
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+| info                       |
+|----------------------------|
+| === 사용자별 구매 내역 === |
+
+| name   | department | product  | price | quantity | 총액 |
+|--------|------------|----------|-------|----------|------|
+| 김철수 | IT         | mouse    | 25    | 2        | 50   |
+| 이영희 | HR         | laptop   | 1200  | 1        | 1200 |
+| 박민수 | IT         | keyboard | 80    | 1        | 80   |
+| 최지연 | Marketing  | monitor  | 300   | 1        | 300  |
+| 정현우 | Finance    | headset  | 150   | 2        | 300  |
+
+| info                               |
+|------------------------------------|
+| === 사용자별 활동 및 구매 분석 === |
+
+[error] evaluate: unreachable empty aggregate value: Sum(BinaryOp { left: CompoundIdentifier { alias: "s", ident: "price" }, op: Multiply, right: CompoundIdentifier { alias: "s", ident: "quantity" } })
+
+| info                     |
+|--------------------------|
+| === 부서별 활동 요약 === |
+
+| department | 직원수 | 총이벤트수 | 총구매액 | 평균구매액 |
+|------------|--------|------------|----------|------------|
+| IT         | 5      | 5          | 280      | 56         |
+| HR         | 2      | 2          | 2400     | 1200       |
+| Marketing  | 1      | 0          | 300      | 300        |
+| Finance    | 1      | 0          | 300      | 300        |
+
+bye
+

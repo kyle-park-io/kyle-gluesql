@@ -1,0 +1,66 @@
+[sled-storage] connected to data/sled_demo
+[error] No such file or directory (os error 2)
+
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+Transaction started
+
+4 rows updated
+
+1 row updated
+
+| info                          |
+|-------------------------------|
+| === 트랜잭션 중 상태 확인 === |
+
+| name     | department | salary | dept_budget |
+|----------|------------|--------|-------------|
+| 박민수   | IT         | 6200   | 195000      |
+| 김철수   | IT         | 5500   | 195000      |
+| 김영수   | IT         | 4500   | 195000      |
+| 신입사원 | IT         | 4000   | 195000      |
+
+Commit completed
+
+| info                               |
+|------------------------------------|
+| === 트랜잭션 커밋 후 최종 상태 === |
+
+| name     | department | salary | dept_budget |
+|----------|------------|--------|-------------|
+| 박민수   | IT         | 6200   | 195000      |
+| 김철수   | IT         | 5500   | 195000      |
+| 김영수   | IT         | 4500   | 195000      |
+| 신입사원 | IT         | 4000   | 195000      |
+
+| info                     |
+|--------------------------|
+| === 제약 조건 테스트 === |
+
+[error] validate: duplicate entry '9' for unique column 'id'
+
+| result             |
+|--------------------|
+| 신입사원 추가 성공 |
+
+| info                     |
+|--------------------------|
+| === 부서별 상세 통계 === |
+
+[error] translate: function args.length not matching: ROUND, expected: 1, found: 2
+
+bye
+

@@ -1,0 +1,42 @@
+[memory-storage] initialized
+| command         | description                           |
+|-----------------|---------------------------------------|
+| .help           | show help                             |
+| .quit           | quit program                          |
+| .tables         | show table names                      |
+| .functions      | show function names                   |
+| .columns TABLE  | show columns from TABLE               |
+| .version        | show version                          |
+| .execute PATH   | execute SQL from PATH                 |
+| .spool PATH|off | spool to PATH or off                  |
+| .show OPTION    | show print option eg).show all        |
+| .set OPTION     | set print option eg).set tabular off  |
+| .edit [PATH]    | open editor with last command or PATH |
+| .run            | execute last command                  |
+
+| info                                   |
+|----------------------------------------|
+| === 매출 트렌드 분석 (윈도우 함수) === |
+
+[error] fetch: table not found: sales_data
+
+| info                         |
+|------------------------------|
+| === 카테고리별 상세 통계 === |
+
+[error] fetch: table not found: sales_data
+
+| info                        |
+|-----------------------------|
+| === 고객 행동 패턴 분석 === |
+
+[error] fetch: table not found: sales_data
+
+| info                     |
+|--------------------------|
+| === 제품별 판매 성과 === |
+
+[error] fetch: table not found: sales_data
+
+bye
+
