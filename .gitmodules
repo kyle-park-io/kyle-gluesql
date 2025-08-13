@@ -1,0 +1,3 @@
+[submodule "gluesql-official"]
+	path = gluesql-official
+	url = https://github.com/gluesql/gluesql
